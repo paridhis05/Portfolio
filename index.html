@@ -3,10 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <p>hello</p>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/Logo.png" alt="Logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="social-icons">
+            <a href="https://in.pinterest.com/paridhis_05/_profile/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://www.instagram.com/paridhis_05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/paridhi-saini-784a24339/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/paridhis05" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="hero-content">
+            <p>Hello,</p>
+            <h1>I'M <span class="typing"></span><br> Paridhi Saini</h1>
+            <p class="sub-text">WEB DEVELOPER • UI/UX DESIGNER</p>
+            <!-- <button class="btn">Hire Me</button> -->
+            <button class="btn">Download CV</button>
+        </div>
+    </section>
+
+
+    <!-- -------------------(1) ABOUT ME --------------- -->
+<div class="div-1" id="about">
+    <section class="about">
+    <div class="about-content">
+        <h2 class="heading">About me</h2>
+        <div class="about-content2">
+            
+            <p>
+                Hi! <br>
+                My name is Paridhi Saini. I am a Web Developer.
+            </p>
+            <p>
+                <span>My objective:</span> Challenge myself in a new environment to learn, develop, and improve my skills through different projects and contribute more to the company with my abilities.
+            </p>
+            <!-- <hr> -->
+            <div class="about-content3">
+                <p><span>Age </span> : 20</p>
+                <p><span>DOB </span> : 05 April 2004</p>
+                <p><span>From </span>: Jaipur, Rajasthan</p>
+                <p><span>Email </span>: paridhisaini19@gmail.com</p>
+            </div>
+        </div>
+    </div>
+        <div class="about-image">
+            <img src="images/about.png" alt="Profile Image">
+        </div>
+    </section>
+</div>
+
+<!-- -------------------(2) EXPERTISE ---------------- -->
+
+<div class="div-2" >
+    <section class="expertise">
+        <h2><span>My</span> Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="80"></div>
+                </div>
+                <span class="percentage">80%</span>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="70"></div>
+                </div>
+                <span class="percentage">70%</span>
+            </div>
+
+            <div class="skill">
+                <h3>Javascript</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="50"></div>
+                </div>
+                <span class="percentage">50%</span>
+            </div>
+
+            <div class="skill">
+                <h3>JAVA</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="60"></div>
+                </div>
+                <span class="percentage">60%</span>
+            </div>
+
+            <div class="skill">
+                <h3>MYSQL</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="80"></div>
+                </div>
+                <span class="percentage">80%</span>
+            </div>
+
+            <div class="skill">
+                <h3>PHP</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="60"></div>
+                </div>
+                <span class="percentage">60%</span>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- -------------------(3) PROJECT ---------------- -->
+
+<div class="div-3" id="work">
+    <section class="projects">
+        <h2><span>My</span> Projects</h2>
+
+        <div class="categories">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Front-end">Front-end</button>
+            <button class="filter-btn" data-category="Javascript">Javascript</button>
+            <button class="filter-btn" data-category="wordpress">WordPress</button>
+        </div>
+
+        <div class="projects-container">
+            <div class="project-item" data-category="Front-end">
+                <a href="https://example.com/project1" target="_blank">
+                    <img src="images/Amazon.png" alt="Project 1">
+                </a>
+            </div>
+            <div class="project-item" data-category="Front-end">
+                <a href="https://example.com/project2" target="_blank">
+                    <img src="images/Petopia.png" alt="Project 2">
+                </a>
+            </div>
+            <div class="project-item" data-category="Front-end">
+                <a href="https://example.com/project3" target="_blank">
+                    <img src="images/JobPortal.png" alt="Project 3">
+                </a>
+            </div>
+            <div class="project-item" data-category="Front-end">
+                <a href="https://example.com/project4" target="_blank">
+                    <img src="images/Skillzs.png" alt="Project 4">
+                </a>
+            </div>
+            <!-- <div class="project-item" data-category="ux-study">
+                <a href="https://example.com/project5" target="_blank">
+                    <img src="C:\Users\saini\Downloads\shop-allInOne2-removebg-preview.png" alt="Project 5">
+                </a>
+            </div>
+            <div class="project-item" data-category="wordpress">
+                <a href="https://example.com/project6" target="_blank">
+                    <img src="C:\Users\saini\Downloads\download (21).jpg" alt="Project 6"> -->
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- -------------------(4) INTERESTS ---------------- -->
+
+<div class="div-4"></div>
+    <section class="interests">
+        <h2><span>My</span> Interests</h2>
+        <div class="icons-container">
+            <div class="icon"><i class="fas fa-pencil-alt"></i></div>
+            <div class="icon"><i class="fas fa-plane"></i></div>
+            <div class="icon"><i class="fa-solid fa-music"></i></div>
+            <div class="icon"><i class="fas fa-coffee"></i></div>
+            <div class="icon"><i class="fas fa-gamepad"></i></div>
+            <div class="icon"><i class="fas fa-paint-brush"></i></div>
+        </div>
+    </section>
+</div>
+
+<!-- -------------------(5) Contact Me ---------------- -->
+
+<div class="div-5" id="contact">
+    <section class="contact-section">
+        <div class="contact-container">
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Contact Me</h3>
+                <h2>Drop a Message</h2>
+                <form action="#" method="POST">
+                    <!-- <label for="name">Enter your Full name</label> -->
+                    <input type="email" id="email" name="email" placeholder="Full Name" required>
+
+                    <!-- <label for="email">Enter your mail</label> -->
+                    <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+
+                    <!-- <label for="message">Enter your message</label> -->
+                    <textarea id="message" name="message" placeholder="Message... " required></textarea>
+
+                    <button type="submit" class="send-btn">Send</button>
+                    <button type="submit" class="send-btn">Hire Me</button>
+                </form>
+                
+            </div>
+
+            <!-- Image Section -->
+            <div class="contact-image">
+                <img src="images/contact.png" alt="Contact Image">
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
 </body>
 </html>
+
